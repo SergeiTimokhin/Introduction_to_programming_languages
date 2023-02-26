@@ -12,7 +12,11 @@
 
 ## **Exercise006**
 
-### _Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)._ | [Блок-схема](Homework/Homework_01/Exercise006/diagram006.drawio.png)>>>[КОД](Homework/Homework_01/Exercise006/Program.cs)
+### _Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)_ | [Блок-схема](Homework/Homework_01/Exercise006/diagram006.drawio.png)>>>[КОД](Homework/Homework_01/Exercise006/Program.cs)
+
+## **Exercise008**
+
+### _Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N_ | [Блок-схема](Homework/Homework_01/Exercise008/diagram008.drawio.png)>>>[КОД](Homework/Homework_01/Exercise008/Program.cs)
 
 - Homework_02
 
