@@ -5,6 +5,8 @@
 
 ### Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее | [Блок-схема](Homework/Homework_01/Exercise002/diagram002.drawio.png)>>>[КОД](Homework/Homework_01/Exercise002/Program.cs)
 
+### Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел. | [Блок-схема](Homework/Homework_01/Exercise004/diagram004.drawio.png)>>>[КОД](Homework/Homework_01/Exercise004/Program.cs)
+
 - Homework_02
 
 - Lecture
