@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-26 04:01:52 "/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtRk9LUkhBRzQ7MjAyMy0wMi0yNjsiMDM6NDg6NTQgIjsyNTkw"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtRk9LUkhBRzQ7MjAyMy0wMi0yNjsiMDQ6MDE6NTIgIjsxOzI2ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Real" array="False" size=""/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; A=&quot;" newline="False"/>
+            <input variable="A"/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <output expression="&quot;&#1042;&#1074;&#1077;&#1076;&#1080;&#1090;&#1077; B&quot;" newline="False"/>
+            <input variable="B"/>
+            <declare name="max" type="Real" array="False" size=""/>
+            <if expression="A&gt;B">
+                <then>
+                    <assign variable="max" expression="A"/>
+                    <output expression="&quot;max=&quot;" newline="False"/>
+                    <output expression="A" newline="False"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="B"/>
+                    <output expression="&quot;max=&quot;" newline="False"/>
+                    <output expression="B" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
