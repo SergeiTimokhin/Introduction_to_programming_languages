@@ -35,3 +35,7 @@ Ex002
 ### Показать чётные числа от -N до N | [Блок-схема](Seminar/Seminar_01/Ex002/diagram.drawio.png)>>>[КОД](Seminar/Seminar_01/Ex002/Program.cs)
 
 Ex003 [КОД](Seminar/Seminar_01/Ex003/Program.cs) - Seminar_02
+
+- Seminar_02
+
+### Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого | [Блок-схема](Seminar/Seminar_02/diagram.drawio.png)>>>[КОД](Seminar/Seminar_02/Program.cs)
