@@ -20,6 +20,10 @@
 
 - Homework_02
 
+## **Exercise010**
+
+### _Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает **вторую цифру** этого числа_ | [Блок-схема](Homework/Homework_02/Exercise010/diagram010.drawio.png)>>>[КОД](Homework/Homework_02/Exercise010/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02
