@@ -7,8 +7,7 @@
 int GetResult(int num)
 {
     int x = num / 10;
-    int y = num % 10;
-    num = x + y;
+    num = x % 10;
     return num;
 }
 
