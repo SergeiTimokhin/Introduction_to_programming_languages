@@ -26,7 +26,7 @@
 
 ## **Exercise013**
 
-### _Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает **вторую цифру** этого числа_ | [Блок-схема](Homework/Homework_02/Exercise013/diagram013.drawio.png)>>>[КОД](Homework/Homework_02/Exercise013/Program.cs)
+### _Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет_ | [Блок-схема](Homework/Homework_02/Exercise013/diagram013.drawio.png)>>>[КОД](Homework/Homework_02/Exercise013/Program.cs)
 
 - Lecture
   - Lecture_01
