@@ -5,7 +5,7 @@
 }
 bool GetNo(int num)
 {
-    if (num < 100)
+    if (-100 < num && num < 100)
     {
 
         Console.Write("В заданном числе отсутствует третья цифра");
@@ -16,11 +16,15 @@ bool GetNo(int num)
 
 int GetResult(int num)
 {
-    while (num > 999)
+    while ((-999 > num) || (num > 999))
     {
         num = num / 10;
     }
     num = num % 10;
+    if (num < 0)
+    {
+        num = num * -1;
+    }
     return num;
 }
 int A = GetNumber("Введите число: ");
