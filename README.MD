@@ -28,6 +28,10 @@
 
 ### _Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет_ | [Блок-схема](Homework/Homework_02/Exercise013/diagram013.drawio.png)>>>[КОД](Homework/Homework_02/Exercise013/Program.cs)
 
+## **Exercise013**
+
+### _Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным_ | [Блок-схема](Homework/Homework_02/Exercise015/diagram015.drawio.png)>>>[КОД](Homework/Homework_02/Exercise015/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02
