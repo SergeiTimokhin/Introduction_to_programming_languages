@@ -1,6 +1,6 @@
 - Homework
 
-  - Homework_01
+# Homework_01
 
 ## **Exercise002**
 
@@ -18,7 +18,7 @@
 
 ### _Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N_ | [Блок-схема](Homework/Homework_01/Exercise008/diagram008.drawio.png)>>>[КОД](Homework/Homework_01/Exercise008/Program.cs)
 
-- Homework_02
+# Homework_02
 
 ## **Exercise010**
 
@@ -31,6 +31,12 @@
 ## **Exercise013**
 
 ### _Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным_ | [Блок-схема](Homework/Homework_02/Exercise015/diagram015.drawio.png)>>>[КОД](Homework/Homework_02/Exercise015/Program.cs)
+
+# Homework_03
+
+## **Exercise019**
+
+### _Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом_ | [Блок-схема](Homework/Homework_03/Exercise019/diagram019.drawio.png)>>>[КОД](Homework/Homework_03/Exercise019/Program.cs)
 
 - Lecture
   - Lecture_01
