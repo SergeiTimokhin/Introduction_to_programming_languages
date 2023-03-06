@@ -38,6 +38,10 @@
 
 ### _Напишите метод(-ы), который принимает на вход пятизначное число и проверяет, является ли оно палиндромом_ | [Блок-схема](Homework/Homework_03/Exercise019/diagram019.drawio.png)>>>[КОД](Homework/Homework_03/Exercise019/Program.cs)
 
+## **Exercise023**
+
+### _Напишите метод(-ы), который принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N_ | [Блок-схема](Homework/Homework_03/Exercise023/diagram023.drawio.png)>>>[КОД](Homework/Homework_03/Exercise023/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02
