@@ -7,9 +7,9 @@ bool GetNo(int num)
 {
     if (num / 100000 > 0)
     {
-
         Console.Write("Это не пятизначное число");
         return false;
+
     }
     return true;
 }
