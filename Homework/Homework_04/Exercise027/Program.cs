@@ -1,11 +1,10 @@
 ﻿/* Напишите программу, которая принимает на вход число 
 и выдаёт сумму цифр в числе*/
 
-/* 
-НЕ СМОГ ДОРАБОТАТЬ РЕШЕНИЕ ЧЕРЕЗ МАССИВ. НЕ СРАБАТЫВАЕТ РАССЧЁТ.
-ПРОШУ ПРИ ПРОВЕРКЕ УКАЗАТЬ НА НЕДОЧЁТЫ.
 
-    string GetNum(string number)
+/* РЕШЕНИЕ ЧЕРЕЗ МАССИВ*/
+
+string GetNum(string number)
 {
     Console.Write(number);
     return Console.ReadLine();
@@ -17,16 +16,18 @@ int GetSum(string A)
     int sum = 0;
     for (int i = 0; i < chars.Length; i++)
     {
-        sum = sum + chars[i];
+        sum += Convert.ToInt32(chars[i].ToString());
     }
     return sum;
 }
 
 string A = GetNum("Введите число: ");
-GetSum(A);
-Console.Write(A); */
+int res = GetSum(A);
+Console.WriteLine($"Сумма цифр равна: {res}");
 
-int GetNumber(string A)
+/* РЕШЕНИЕ ЧЕРЕЗ АРИФМЕТИЧЕСКИЕ ДЕЙСТВИЯ*/
+
+/* int GetNumber(string A)
 {
     Console.Write(A);
     return Convert.ToInt32(Console.ReadLine());
@@ -43,4 +44,4 @@ int GetRes(int A)
 }
 int A = GetNumber("Введите число: ");
 int result = GetRes(A);
-Console.WriteLine(result);
+Console.WriteLine($"Сумма цифр равна: {result}"); */

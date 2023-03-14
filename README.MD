@@ -46,6 +46,20 @@
 
 ### _Напишите метод(-ы), который принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N_ | [Блок-схема](Homework/Homework_03/Exercise023/diagram023.drawio.png)>>>[КОД](Homework/Homework_03/Exercise023/Program.cs)
 
+# Homework_04
+
+## **Exercise025**
+
+### _Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B_ | [Блок-схема](Homework/Homework_04/Exercise025/diagram025.drawio.png)>>>[КОД](Homework/Homework_04/Exercise025/Program.cs)
+
+## **Exercise027**
+
+### _Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе_ | [Блок-схема](Homework/Homework_04/Exercise027/diagram027.drawio.png)>>>[КОД](Homework/Homework_04/Exercise027/Program.cs)
+
+## **Exercise029**
+
+### _Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран_ | [Блок-схема](Homework/Homework_04/Exercise029/diagram029.drawio.png)>>>[КОД](Homework/Homework_04/Exercise029/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02

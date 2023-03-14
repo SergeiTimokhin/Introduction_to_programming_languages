@@ -1,4 +1,7 @@
-﻿double GetXYZ(string number)
+﻿/* Напишите метод(-ы), который принимает на вход координаты двух точек 
+и находит расстояние между ними в 3D пространстве. */
+
+double GetXYZ(string number)
 {
     Console.Write(number);
     return Convert.ToDouble(Console.ReadLine());
