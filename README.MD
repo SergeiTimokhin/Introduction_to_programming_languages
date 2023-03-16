@@ -60,6 +60,16 @@
 
 ### _Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран_ | [Блок-схема](Homework/Homework_04/Exercise029/diagram029.drawio.png)>>>[КОД](Homework/Homework_04/Exercise029/Program.cs)
 
+# Homework_05
+
+## **Exercise034**
+
+### _Задайте массив заполненный случайными положительными трёхзначными числами.Напишите программу, которая покажет количество чётных чисел в массиве [345, 897, 568, 234] -> 2 _ | [Блок-схема](Homework/Homework_05/Exercise034/diagram034.drawio.png)>>>[КОД](Homework/Homework_05/Exercise034/Program.cs)
+
+### _Задайте одномерный массив, заполненный случайными числами.Найдите сумму элементов, стоящих на нечётных позициях. [3, 7, 23, 12] -> 19 [-4, -6, 89, 6] -> 0_ | [Блок-схема](Homework/Homework_05/Exercise036/diagram036.drawio.png)>>>[КОД](Homework/Homework_05/Exercise036/Program.cs)
+
+### _Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.[3 7 22 2 78] -> 76_ | [Блок-схема](Homework/Homework_05/Exercise038/diagram038.drawio.png)>>>[КОД](Homework/Homework_05/Exercise038/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02
