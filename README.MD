@@ -70,6 +70,12 @@
 
 ### _Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.[3 7 22 2 78] -> 76_ | [Блок-схема](Homework/Homework_05/Exercise038/diagram038.drawio.png)>>>[КОД](Homework/Homework_05/Exercise038/Program.cs)
 
+# Homework_06
+
+## **Exercise041**
+
+### _Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.0, 7, 8, -2, -2 -> 2_ | [Блок-схема](Homework/Homework_06/Exercise041/diagram041.drawio.png)>>>[КОД](Homework/Homework_06/Exercise041/Program.cs)
+
 - Lecture
   - Lecture_01
   - Lecture_02
