@@ -23,13 +23,13 @@ int GetNumber(string Value)
     Console.Write(Value);
     return Convert.ToInt32(Console.ReadLine());
 }
+
 double GetCoordinateX(double b1, double k1, double b2, double k2)
 {
     double x = (b2 - b1) / (k1 - k2);
     if (k1 == k2) Console.WriteLine("Прямые не пересекаются");
     else Console.WriteLine($"Координата X = {Math.Round(x, 1)};");
     return Math.Round(x, 1);
-
 }
 
 double GetCoordinateY(double b1, double k1, double b2, double k2)
@@ -39,6 +39,7 @@ double GetCoordinateY(double b1, double k1, double b2, double k2)
     else Console.Write($"Координата Y = {Math.Round(y, 1)};");
     return Math.Round(y, 1);
 }
+
 double b1 = GetNumber("Введите коэффициент b1: ");
 double k1 = GetNumber("Введите коэффициент k1: ");
 double b2 = GetNumber("Введите коэффициент b2: ");
