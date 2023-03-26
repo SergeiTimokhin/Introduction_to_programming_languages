@@ -1,63 +1,59 @@
 ﻿/*  
-Задайте двумерный массив из целых чисел. 
-Найдите среднее арифметическое элементов в каждом столбце.
-
-Например, задан массив:
-1 4 7 2
-5 9 2 3
-8 4 2 4
-Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+Напишите программу, которая заполнит спирально массив 4 на 4.
+Например, на выходе получается вот такой массив:
+01 02 03 04
+12 13 14 05
+11 16 15 06
+10 09 08 07
 */
-int GetValue(string value)
+
+int GetSize(string value)
 {
     Console.Write(value);
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void GetArray(int[,] array)
+void GetArray(int[,] array, int A)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    int i = 0;
+    int j = 0;
+    int x = 1;
+    while (A != 0)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = new Random().Next(0, 10);
+        int k = 0;
+        do { array[i, j++] = x++; }
+        while (A - 1 > ++k);
+        for (k = 0; k < A - 1; k++)
+        {
+            array[i++, j] = x++;
+        }
+        for (k = 0; k < A - 1; k++)
+        {
+            array[i, j--] = x++;
+        }
+        for (k = 0; k < A - 1; k++)
+        {
+            array[i--, j] = x++;
+        }
+        ++i;
+        ++j;
+        A = A < 2 ? 0 : A - 2;
     }
 }
-
-void PrintArray(int[,] array)
+void PrintArray(int[,] a)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < a.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < a.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j]} ");
+            Console.Write("{0,3}", a[i, j]);
         }
         Console.WriteLine();
     }
 }
 
-void GetResult(int[,] array, int n)
-{
-
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        double avarage = 0;
-        for (int i = 0; i < array.GetLength(0); i++)
-        {
-            avarage = avarage + array[i, j];
-        }
-        avarage = Math.Round(avarage / n, 1);
-        Console.Write(avarage + ";");
-    }
-}
-
-
-int m = GetValue("Введите колличество строк: ");
-int n = GetValue("Введите колличество столбцов: ");
-int[,] A = new int[m, n];
-GetArray(A);
-PrintArray(A);
-Console.Write("Среднее значение чисел в каждом столбце: ");
-GetResult(A, n);
-
-
-
+int A = GetSize("Введите размер массива: ");
+int[,] array = new int[A, A];
+GetArray(array, A);
+PrintArray(array);
+Console.WriteLine();
