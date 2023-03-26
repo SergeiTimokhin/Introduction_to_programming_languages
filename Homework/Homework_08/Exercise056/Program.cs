@@ -1,12 +1,15 @@
-﻿/* Напишите программу, которая на вход принимает позиции элемента 
-в двумерном массиве, и возвращает значение этого элемента 
-или же указание, что такого элемента нет.
+﻿/*  Задайте прямоугольный (ПО ПРИМЕРУ - КВАДРАТНЫЙ) двумерный массив. 
+Напишите программу, которая будет находить строку с наименьшей суммой элементов.
+
 Например, задан массив:
+
 1 4 7 2
 5 9 2 3
 8 4 2 4
+5 2 6 7
 
-17 -> такого числа в массиве нет
+Программа считает сумму элементов в каждой строке 
+и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 */
 int GetValue(string value)
 {
@@ -20,7 +23,7 @@ void GetArray(double[,] array)
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = Convert.ToDouble(temp.Next(-100, 100) / 10.0);
+            array[i, j] = new Random().Next(0, 10);
     }
 }
 
@@ -35,24 +38,41 @@ void PrintArray(double[,] array)
         Console.WriteLine();
     }
 }
-void GetResult(double[,] array, int x, int y)
-{
 
-    if (x > array.GetLength(0) || y > array.GetLength(1))
+double SumLineElements(double[,] array, int i)
+{
+    double sumLine = array[i, 0];
+    for (int j = 1; j < array.GetLength(1); j++)
     {
-        Console.WriteLine("Элемент отсутствует");
+        sumLine += array[i, j];
     }
-    else
-    {
-        Console.WriteLine($"В строке {x} и в столбце {y} присутствует элемент {array[x - 1, y - 1]}");
-    }
+    return sumLine;
 }
-int m = GetValue("Введите колличество строк: ");
-int n = GetValue("Введите колличество столбцов: ");
-double[,] A = new double[m, n];
+double GetResult(double[,] array, double sumLine)
+{
+    double minSumLine = 0;
+    sumLine = SumLineElements(array, 0);
+    for (int i = 1; i < array.GetLength(0); i++)
+    {
+        double tempSumLine = SumLineElements(array, i);
+
+        if (sumLine > tempSumLine)
+        {
+            sumLine = tempSumLine;
+            minSumLine = i;
+        }
+    }
+    return minSumLine;
+
+}
+
+int m = GetValue("Введите размер массива : ");
+double[,] A = new double[m, m];
+
 GetArray(A);
-Console.WriteLine("Массив чисел: ");
+Console.WriteLine("Исходный массив:");
 PrintArray(A);
-int x = GetValue("Введите номер строки: ");
-int y = GetValue("Введите номер столбца: ");
-GetResult(A, x, y);
+double sumLine = SumLineElements(A, 0);
+double result = GetResult(A, sumLine);
+
+Console.WriteLine($"\n{result + 1} - строка с наименьшей суммой элементов");
