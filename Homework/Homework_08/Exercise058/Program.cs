@@ -1,11 +1,12 @@
 ﻿/*  
-Задайте двумерный массив размером m×n, 
-заполненный случайными вещественными числами.
-
-m = 3, n = 4.
-0,5 7 -2 -0,2
-1 -3,3 8 -9,9
-8 7,8 -7,1 9
+Задайте две матрицы. Напишите программу, которая будет находить 
+произведение двух матриц.
+Например, даны 2 матрицы:
+2 4 | 3 4
+3 2 | 3 3
+Результирующая матрица будет:
+18 20
+15 18
 */
 int GetValue(string value)
 {
@@ -13,17 +14,17 @@ int GetValue(string value)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void GetArray(double[,] array)
+void GetArray(int[,] array)
 {
-    Random temp = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = Convert.ToDouble(temp.Next(-100, 100) / 10.0);
+        {
+            array[i, j] = new Random().Next(0, 10);
+        }
     }
 }
-
-void PrintArray(double[,] array)
+void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -34,12 +35,37 @@ void PrintArray(double[,] array)
         Console.WriteLine();
     }
 }
-int m = GetValue("Введите колличество строк: ");
-int n = GetValue("Введите колличество столбцов: ");
-double[,] A = new double[m, n];
-GetArray(A);
-PrintArray(A);
 
+int[,] GetResult(int[,] a, int[,] b, int m)
+{
+    int[,] c = new int[m, m];
 
+    int temp = 0;
 
+    for (int i = 0; i < a.GetLength(0); i++)
+    {
+        for (int j = 0; j < a.GetLength(1); j++)
+        {
+            for (int k = 0; k < a.GetLength(1); k++)
+            {
+                temp = temp + a[i, k] * b[j, k];
+            }
+            c[i, j] = temp;
+            temp = 0;
+        }
+    }
+    return c;
+}
 
+int m = GetValue("Введите размер матриц: ");
+
+int[,] arrayA = new int[m, m];
+int[,] arrayB = new int[m, m];
+GetArray(arrayA);
+GetArray(arrayB);
+PrintArray(arrayA);
+Console.WriteLine();
+PrintArray(arrayB);
+Console.WriteLine();
+int[,] multiArray = GetResult(arrayA, arrayB, m);
+PrintArray(multiArray);
