@@ -11,20 +11,27 @@ int GetValue(string value)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-string GetList(int m, int n)
+void GetCheck(int m, int n)
 {
-
     if (m < n)
     {
-        if (m < n) return $"{m}, " + GetList(m + 1, n);
-        else return $"{n}.";
+        Console.Write("");
     }
     else
     {
-        if (m > n) return $"{n}, " + GetList(m, n + 1);
-        else return $"{m}.";
+        Console.Write("Ошибка при вводе чисел.");
+        Environment.Exit(0);
     }
+
 }
+string GetList(int m, int n)
+{
+
+    if (m < n) return $"{m}, " + GetList(m + 1, n);
+    else return $"{n}.";
+}
+
+
 int GetSum(int k, int s)
 {
 
@@ -33,32 +40,11 @@ int GetSum(int k, int s)
 }
 
 
-/* int GetSum(int m, int n)
-{
-    int sum = 0;
-    if (m < n)
-    {
-        while (m <= n)
-        {
-            sum = sum + m;
-            m++;
-        }
-        return sum;
-    }
-    else
-    {
-        while (m >= n)
-        {
-            sum = sum + n;
-            n++;
-        }
-        return sum;
-    }
-} */
 
 
 int M = GetValue("Введите меньшее из чисел(M): ");
 int N = GetValue("Введите большее из чисел (N): ");
+GetCheck(M, N);
 Console.Write("Список натуральных элементов: ");
 Console.WriteLine(GetList(M, N));
 Console.Write("Сумма натуральных элементов: ");
